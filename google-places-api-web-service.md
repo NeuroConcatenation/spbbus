@@ -13,8 +13,8 @@ https://maps.googleapis.com/maps/api/place/textsearch/json?parameters
 `json` — вывод в формате JavaScript Object Notation (JSON)
 
 #### parameters:
-+ `key` – ключ API вашего приложения
-+ `query` – фраза, по которой выполняется поиск, например "ресторан" или "улица Ленина, 123". Служба Google Places возвращает подходящие варианты на основе этой строки. Результаты будут отсортированы по релевантности.
++ `key (обязательный)` – ключ API вашего приложения
++ `query (обязательный)` – фраза, по которой выполняется поиск, например "ресторан" или "улица Ленина, 123". Служба Google Places возвращает подходящие варианты на основе этой строки. Результаты будут отсортированы по релевантности.
 > Название остановки
 + `location` – широта и долгота точки, вокруг которой выполняется поиск мест. Должны быть указаны ее координаты в формате: широта,долгота.
 > Санкт-Петербург: 59.9648498,30.386153
@@ -26,6 +26,8 @@ https://maps.googleapis.com/maps/api/place/textsearch/json?parameters
 >[Остальные типы мест](https://developers.google.com/places/web-service/supported_types?hl=ru)
 + `language` – код языка, на котором следует по возможности возвращать результаты.
 > ru
+
+Example: `https://maps.googleapis.com/maps/api/place/textsearch/json?query=Метро%20Петроградская&location=59.9648498,30.386153&radius=18000&type=bus_station&language=ru&key=AIzaSyCCJsr6kK36i1RqoPWKwOXYNrfwMg1ppz4`
 
 
 ### Nearby search
@@ -41,5 +43,3 @@ https://maps.googleapis.com/maps/api/place/nearbysearch/json?parameters
 + `radius` – расстояние в метрах, в пределах которого должны находиться найденные результаты. Максимальный допустимый радиус составляет 50 000 метров. Обратите внимание, что параметр radius не следует использовать, если указано значение rankby=distance (см. раздел Дополнительные параметры ниже).
 + `keyword` – слово, по которому ведется поиск во всем содержимом, проиндексированном Google для данного места, включая название, тип, адрес, отзывы пользователей и сторонний контент.
 + `language` – код языка, на котором следует по возможности возвращать результаты.
-
-Example: `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=restaurant&keyword=cruise&key=YOUR_API_KEY`
