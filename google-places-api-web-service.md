@@ -1,9 +1,9 @@
 # Google Places API Web Service
-С помощью данного [API](https://developers.google.com/places/web-service/?hl=ru) организовываем получение координат остановки с помощью поиска по названию остановки.
+С помощью данного [API](https://developers.google.com/places/web-service/?hl=ru) организовываем получение координат остановки по названию.
 
-API key (Google Places API Web Service): AIzaSyCCJsr6kK36i1RqoPWKwOXYNrfwMg1ppz4 (для того, чтобы воспользоваться, сообщите свой IP)
+API key: AIzaSyCCJsr6kK36i1RqoPWKwOXYNrfwMg1ppz4 (для того, чтобы воспользоваться, сообщите свой IP)
 
-[Можете создать свой](https://support.google.com/googleapi/answer/6158862?hl=ru)
+[Можете создать свой API key](https://support.google.com/googleapi/answer/6158862?hl=ru)
 
 ### Text search
 Запрос к службе текстового поиска мест – это URL-адрес в формате HTTP, который выглядит следующим образом:
